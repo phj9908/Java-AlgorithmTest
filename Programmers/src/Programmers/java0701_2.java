@@ -1,30 +1,32 @@
+// 로또의 최고 순위 최저 순위
+
 package Programmers;
-import java.util.Arrays;
-import java.util.stream.IntStream;
 
-// 
-
-class Solution1 {
+class Solution {
     public int[] solution(int[] lottos, int[] win_nums) {
-        int[] arr = {6,6,5,4,3,2,1};
-        int zeros = 0;
-        int same = 0;
+        int zero=0;
+        int same=0;
         
         for(int l:lottos) {
-        	if(l==0) zeros++;
-        	if(IntStream.of(win_nums).anyMatch(x -> x== l)) same++; 
+        	if(l==0) zero++;
+        	else {
+        		for(int w:win_nums) {
+        			if(l==w) same++;
+        		}
+        	}
         }
-        
-        int[] answer = {arr[zeros+same],arr[same]};
+        int[] answer = {Math.min(7-(same+zero),6),Math.min(7-same, 6)}; // 7개 불일치 하면 6등으로 출력해야 하니까 min( ,6) 해주기
         
         return answer;
+        
+        }
     }
     
-    public static void main(String[] args) {
-    	int[] lottos= {44,1,0,0,31,25};
-    	int[] win_nums = {31, 10, 45, 1, 6, 19};
-    	
-    	Solution sol = new Solution();
-    	System.out.println(sol.solution(lottos, win_nums));
-    }
+//    public static void main(String[] args) {
+//    	int[] lottos= {44,1,0,0,31,25};
+//    	int[] win_nums = {31, 10, 45, 1, 6, 19};
+//    	
+//    	Solution_lotto sol = new Solution_lotto();
+//    	System.out.println(sol.solution(lottos, win_nums));
+//    }
 }

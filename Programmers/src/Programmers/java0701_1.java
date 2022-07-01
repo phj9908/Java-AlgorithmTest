@@ -1,5 +1,7 @@
-package Programmers;
 // 평균 구하기
+// sum은 Stream API 쓰는것 보다 for-loop쓰는걸 추천, 그게 더빠름
+
+package Programmers;
 
 import java.util.Arrays;
 
@@ -9,10 +11,10 @@ class Solution {
         // or (double)(Arrays.stream(arr).sum())/arr.length
     }
 
-//	//결과 확인 테스트
+////	//결과 확인 테스트
 //    public static void main(String[] args) {
 //    	int[] x= {1,2,3};
-//    	Solution sol = new Solution();
+//    	Solution_aver sol = new Solution_aver();
 //    	
 //    	System.out.print(sol.solution(x));	
 //    }
