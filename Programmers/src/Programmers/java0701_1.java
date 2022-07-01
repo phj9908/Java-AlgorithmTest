@@ -1,3 +1,6 @@
+package Programmers;
+// 평균 구하기
+
 import java.util.Arrays;
 
 class Solution {
@@ -6,7 +9,7 @@ class Solution {
         // or (double)(Arrays.stream(arr).sum())/arr.length
     }
 
-//	  결과 확인 테스트
+//	//결과 확인 테스트
 //    public static void main(String[] args) {
 //    	int[] x= {1,2,3};
 //    	Solution sol = new Solution();
