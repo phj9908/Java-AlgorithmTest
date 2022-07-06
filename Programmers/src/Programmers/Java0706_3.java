@@ -1,13 +1,17 @@
-// 예산(lv3)
+// 예산(lv3) - 커뮤러닝 코테
 package Programmers;
 
 import java.util.Arrays;
 
 public class Java0706_3 {
 	public int solution(int[] budgets, int M) {
-
+		
+		int answer=0;
+		
+		Arrays.sort(budgets);
 		int start = 0;
-		int end = Arrays.stream(budgets).max().getAsInt();
+		//int end = Arrays.stream(budgets).max().getAsInt(); // 시간초과
+		int end = budgets[budgets.length-1];
 		int mid = 0;
 		
 		while (start <= end) {
@@ -28,7 +32,8 @@ public class Java0706_3 {
 				end = mid+1;
 			else
 				start = mid-1;
+				answer = mid;
 		}
-		return mid;
+		return answer;
 	}
 }
