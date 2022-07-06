@@ -1,7 +1,7 @@
 // 두 개 뽑아서 더하기 
 import java.util.*;
 
-package Programmers;
+package Programmers.lv1;
 
 public class Java0706_4 {
 	

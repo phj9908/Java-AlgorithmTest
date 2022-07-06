@@ -1,6 +1,6 @@
 // K번째 수
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.Arrays;
 

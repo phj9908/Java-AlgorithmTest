@@ -1,6 +1,6 @@
 // 음양더하기
 
-package Programmers;
+package Programmers.lv1;
 
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {

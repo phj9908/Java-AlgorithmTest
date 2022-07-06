@@ -1,7 +1,7 @@
 // 완주하지 못한 선수
 // HashMap
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.HashMap;
 

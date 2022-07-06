@@ -1,5 +1,5 @@
 // 예산(lv3) - 커뮤러닝 코테
-package Programmers;
+package Programmers.lv2;
 
 import java.util.Arrays;
 

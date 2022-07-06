@@ -1,5 +1,5 @@
 // 3진법 뒤집기
-package Programmers;
+package Programmers.lv1;
 
 public class Java0706_5 {
     public int solution(int n) {

@@ -1,6 +1,6 @@
 // 숫자문자열과 영단어
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.Arrays;
 

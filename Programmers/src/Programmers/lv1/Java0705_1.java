@@ -1,6 +1,6 @@
 // 체육복
 
-package Programmers;
+package Programmers.lv1;
 
 public class Java0705_1 {
     public int solution(int n, int[] lost, int[] reserve) {

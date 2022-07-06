@@ -1,6 +1,6 @@
 // 실패율
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.*;
 

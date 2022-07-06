@@ -1,6 +1,6 @@
 // 신고 결과 받기
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.HashMap;
 import java.util.HashSet;

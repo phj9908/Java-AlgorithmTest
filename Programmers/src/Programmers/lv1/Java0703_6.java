@@ -2,7 +2,7 @@
 // 조합 구현하기 -> dfs
 // 중복되는 수는 안주기에 visited 체크는 안해도 됨
 
-package Programmers;
+package Programmers.lv1;
 
 class Java0703_6 {
 

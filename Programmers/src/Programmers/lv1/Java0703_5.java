@@ -1,6 +1,6 @@
 // 크레인 인형뽑기 게임
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.*;
 

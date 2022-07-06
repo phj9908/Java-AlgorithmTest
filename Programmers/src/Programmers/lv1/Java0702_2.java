@@ -1,5 +1,5 @@
 // 신규 아이디 추천
-package Programmers;
+package Programmers.lv1;
  
 
 class Solution {

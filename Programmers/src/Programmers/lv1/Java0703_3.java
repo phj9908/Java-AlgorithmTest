@@ -1,6 +1,6 @@
 // 없는 숫자 더하기
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.Arrays;
 

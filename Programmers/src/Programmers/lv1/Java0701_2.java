@@ -1,6 +1,6 @@
 // 로또의 최고 순위 최저 순위
 
-package Programmers;
+package Programmers.lv1;
 
 class Solution {
     public int[] solution(int[] lottos, int[] win_nums) {

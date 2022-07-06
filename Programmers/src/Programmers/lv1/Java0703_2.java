@@ -2,7 +2,7 @@
 // 중간 키패드 누를때 양손의 위치 구하기 -> 위아래 거리는 3차이, 양 옆으로 1차이 이용해서 (현재 번호 - 누를 번호)/3 + (현재 번호 - 누를 번호) %3
 // * =>10 , 0 =>11, # => 12 로 치환 
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.*;
 

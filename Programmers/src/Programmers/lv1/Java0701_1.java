@@ -1,7 +1,7 @@
 // 평균 구하기
 // sum은 Stream API 쓰는것 보다 for-loop쓰는걸 추천, 그게 더빠름
 
-package Programmers;
+package Programmers.lv1;
 
 import java.util.Arrays;
 

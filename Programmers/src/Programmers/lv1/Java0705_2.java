@@ -1,5 +1,5 @@
 // 폰켓몬
-package Programmers;
+package Programmers.lv1;
 
 import java.util.HashSet;
 
