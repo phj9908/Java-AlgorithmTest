@@ -4,7 +4,7 @@ package Programmers;
 
 import java.util.Arrays;
 
-class java0703_3 {
+class Java0703_3 {
 	String[] arr= {"0","1","2","3","4","5","6","7","8","9"};  // contain() 를 쓰기위해 각 원소가 String 이어야 함
 	
 	public int solution(int[] numbers) {

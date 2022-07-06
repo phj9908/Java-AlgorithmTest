@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class java0704_3 {
+public class Java0704_3 {
     public List<Integer> solution(int[] answers) {
     	
     	int[] answer = {0,0,0};

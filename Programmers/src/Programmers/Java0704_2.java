@@ -4,7 +4,7 @@ package Programmers;
 
 import java.util.Arrays;
 
-public class java0704_2 {
+public class Java0704_2 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         

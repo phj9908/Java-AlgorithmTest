@@ -5,7 +5,7 @@ package Programmers;
 
 import java.util.HashMap;
 
-public class java0704_1 {
+public class Java0704_1 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         

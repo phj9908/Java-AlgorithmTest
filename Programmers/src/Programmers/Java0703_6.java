@@ -4,7 +4,7 @@
 
 package Programmers;
 
-class java0703_6 {
+class Java0703_6 {
 
 	public int answer = 0; // 클래스 내의 어느 함수에서도 접근가능하도록
 	public boolean[] sieve; // 주의) 여기서 = new boolean[n] 하면 안됨 main에서 해야함

@@ -4,7 +4,7 @@ package Programmers;
 
 import java.util.*;
 
-class java0703_5 {
+class Java0703_5 {
 	
 	public int solution(int[][] board, int[] moves) {
 		int answer = 0;
