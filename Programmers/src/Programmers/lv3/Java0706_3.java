@@ -42,7 +42,7 @@ public class Java0706_3 {
 		
 		int answer=0;
 		int start =0;
-		int end = IntStream.of(budgets).max().OrElse(0);
+		int end = IntStream.of(budgets).max().orElse(0);
 		
 		while (start <= end) {
 			final int  mid = (start + end) / 2; 

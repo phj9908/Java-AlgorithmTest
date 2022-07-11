@@ -19,6 +19,7 @@ public class Java0708_2 {
        	// 두 수 a,b를 순서를 번갈아가며 합친 수(330,303) 중 큰 값을 앞으로 정렬하겠다     
         
         for(String s:str) answer+=s;
+        // answer = String.join("",str);
         
         return answer.charAt(0) == '0' ? "0":answer;
         // answer.startsWith("0")? "0":answer;
