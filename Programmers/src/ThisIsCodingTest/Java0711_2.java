@@ -39,7 +39,7 @@ public class Java0711_2 {
 			for(int j=0;j<m;j++) arr[i][j]=scanner.nextInt(); 
 		}
 		
-		int cnt=1; 		// 이동한 칸 갯수
+		int cnt=1; 		// 이동한 칸 갯수(현재 좌표 방문함으로써 1)
 		int turn=0;		// 방향 바꾼 횟수
 		
 		while (true) {
