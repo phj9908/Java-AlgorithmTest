@@ -24,11 +24,11 @@ class Fruit implements Comparable<Fruit>{
 	}
 	
 
-	// 정렬 기준 : 점수가 낮은 순서
+	// 정렬 기준 : 점수가 낮은 순서(오름차순)
 	@Override
 	public int compareTo(Fruit o) {
-		if(this.score < o.score) return -1;
-		return 1;
+		if(this.score < o.score) return -1; // 음수 :오름차순 정렬
+		return 1; // 양수 : 내림차순 정렬
 	}
 
 }
