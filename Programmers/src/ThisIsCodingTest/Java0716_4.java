@@ -10,7 +10,7 @@ public class Java0716_4 {
 	public static int[] indegree = new int[100001];
 	
 	// 각 노드에 연결된 간선 정보를 담기 위한 그래프 초기화
-	// 한 노드에 여러개의 노드가 연결될 수 있으니 2차원으로 생성
+	// 한 노드에 여러개의 선수 노드가 연결될 수 있으니 2차원으로 생성
 	public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 	
 	public static void main(String[] args) {
@@ -22,11 +22,11 @@ public class Java0716_4 {
 		
 		for(int i=0;i<=v;i++) graph.add(new ArrayList<Integer>());
 		
-		for(int i=0;i<v;i++) {
+		for(int i=0;i<e;i++) {
 			
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			graph.get(a).add(b); // a -> b 간선
+			int a = sc.nextInt(); 
+			int b = sc.nextInt(); // 선수 노드
+			graph.get(a).add(b);  // b -> a 간선
 			
 			indegree[b]++; 		 // 진입차수 1 증가
 			
