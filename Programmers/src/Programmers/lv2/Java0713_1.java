@@ -16,17 +16,21 @@ public class Java0713_1 {
             for (int p : people) {
                 
                 LOOP2:
-                    while(true){
-                        if (tIdx<tshirts.length && p <= tshirts[tIdx]){
-                            answer++;
-                            tIdx++;
-                            break LOOP2;                    
-                        }
-                        if(tIdx+1<tshirts.length) 
-                            tIdx++;  
-                        else break LOOP1;            
-                    }
-                    
+	                while(true){
+	                    if (tIdx<tshirts.length){
+	                    	if( p <= tshirts[tIdx]) {
+		                        answer++;
+		                        tIdx++;
+		                        break LOOP2;             
+	                        }      
+	                    	else if(tIdx+1<tshirts.length) 
+	                        tIdx++;  
+	                    	
+	                    	else break LOOP1;  
+	                    }
+	                              
+	                }
+                
 		}
 
         return answer;

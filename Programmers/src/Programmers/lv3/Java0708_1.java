@@ -12,9 +12,9 @@ public class Java0708_1 {
                 int end = s-w;
                 int length = end-start;                 
                 
-                answer+= (length%(2*w+1)==0)? length/(2*w+1):length/(2*w+1)+1;
+                answer += ceil_fun(length,w);
             }
-            start = s+w+1;
+            start = s+w+1;	// 기지국 추가할 구간의 다음 시작점
         }
         
         // 만약 마지막 기지국 + w 뒤에 또 기지국 설치할 구간이 있다면
@@ -22,8 +22,18 @@ public class Java0708_1 {
             int end = n+1;
             int length = end-start;
             
-            answer+=(length%(2*w+1)==0)? length/(2*w+1):length/(2*w+1)+1;
+            answer += ceil_fun(length, w);
         }
         return answer;
     }
+    
+	public int ceil_fun(int d,int w) {
+		
+		int x=d/(2*w+1);
+		
+		if(d%(2*w+1)!=0) // 올림 
+			x++;
+		
+		return x;
+	}
 }
