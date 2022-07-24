@@ -6,7 +6,7 @@ package ThisIsCodingTest;
 public class Java0723_5 {
     public boolean solution(int[][] key, int[][] lock) {
         
-    	int padSize = lock.length -1; // -1은 최소한으로 겹칠 대 하나의 좌표.
+    	int padSize = lock.length -1; // -1은 최소한으로 겹칠 때 하나의 좌표.
     	
     	// i=0 : 90도 회전, i=1 : 180도 회전...
     	for(int i=0;i<4;i++) {
