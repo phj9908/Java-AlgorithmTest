@@ -1,4 +1,4 @@
-// 치킨 배달
+// 치킨배달
 
 package ThisIsCodingTest;
 
@@ -45,7 +45,7 @@ class Combination{
 	}
 
 	// 조합을 구하기 위해 dfs활용
-	public void combinationDFS(ArrayList<Position> chicken, int depth, int idx, int time) {
+	public void combinationDFS(ArrayList<Position> chicken, int depth, int idx, int chickenIdx) {
 		if(depth==m) {
 			ArrayList<Position> temp = new ArrayList<>();
 			for(int i=0;i<nowCombi.length;i++)
@@ -55,16 +55,14 @@ class Combination{
 			return;
 		}
 		
-		if(time==n) return;	
-		nowCombi[idx] = time;	// 치킨 인덱스? 저장 (52line 참고)
-		combinationDFS(chicken,depth+1,idx+1,time+1); // 포함	
-		combinationDFS(chicken, depth, idx, time+1);  // 비포함
+		if(chickenIdx==n) return;	
+		nowCombi[idx] = chickenIdx;	// 치킨 인덱스? 저장 (52line 참고)
+		combinationDFS(chicken,depth+1,idx+1,chickenIdx+1); // 포함	
+		combinationDFS(chicken, depth, idx, chickenIdx+1);  // 비포함
 	}
 }
 
-
 public class Java0806_1 {
-	
 	public static int n,m;
 	public static int[][] map = new int[50][50]; 
 	
@@ -120,6 +118,5 @@ public class Java0806_1 {
           // 치킨 거리의 합 반환
           return result;
     }
-	
 	
 }
