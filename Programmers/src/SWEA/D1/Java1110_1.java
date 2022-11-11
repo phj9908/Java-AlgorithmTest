@@ -19,8 +19,8 @@ public class Java1110_1 {
             visited = new boolean[10];
             while (true){
                 K = N * i;
-                count(K, visited);
-                if (check(visited)) break;
+                count(K, visited); // K에 있는 문자열 방문 체크
+                if (check(visited)) break; // 0~9모두 방문했다면 반복문 탈출
                 i++;
             }
             System.out.printf("#%d %d\n", test_case, K);
