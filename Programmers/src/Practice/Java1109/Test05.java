@@ -14,9 +14,9 @@ public class Test05 {
 				if(arr[j]<arr[indexMin])
 					indexMin = j;
 			}
-		temp = arr[indexMin];
-		arr[indexMin] = arr[i];
-		arr[i] = temp;
+			temp = arr[indexMin];
+			arr[indexMin] = arr[i];
+			arr[i] = temp;
 		}
 		
 		System.out.println(Arrays.toString(arr));
